@@ -4,7 +4,8 @@ title: SLAM
 icon: fas fa-map-marked-alt
 order: 3
 ---
-
+> **SLAM 알고리즘을 공부한 내용을 기록한 포스팅 모음**
+---
 {% assign posts = site.categories.SLAM %}
 {% for post in posts %}
   <article class="card-wrapper card mb-3">
