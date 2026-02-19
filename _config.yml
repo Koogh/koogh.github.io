@@ -1,14 +1,22 @@
+# The Site Configuration
 theme: jekyll-theme-chirpy
 lang: en
 timezone: Asia/Seoul
 
+# SEO 설정
 title: Koogh's Blog
-tagline: Robotics PhD | Samsung Research
-description: "SLAM, Perception, and Planning for Robotics."
+tagline: Robotics & SLAM
+description: "PhD in Electronics, Samsung Research"
 
+# [수정 1] 사이트 주소 (CSS/JS 로드에 필수)
 url: "https://koogh.github.io"
+
+# [수정 2] GitHub 아이디
 github:
   username: Koogh
+
+twitter:
+  username: 
 
 social:
   name: Koogh
@@ -16,10 +24,10 @@ social:
   links:
     - https://github.com/Koogh
 
+# [수정 3] 아래 설정은 원본 그대로 유지 (특수문자만 제거)
 paginate: 10
 baseurl: ""
 
-# 아래 설정은 Chirpy 테마의 정상 작동을 위해 유지해야 합니다.
 collections:
   tabs:
     output: true
