@@ -24,10 +24,33 @@ social:
   links:
     - https://github.com/Koogh
 
-# [수정 3] 아래 설정은 원본 그대로 유지 (특수문자만 제거)
+# [이미지] 사이드바에 본인 사진을 넣고 싶다면 여기에 경로 입력
+# avatar: "/assets/img/avatar.png" 
+
+# ==========================
+#  렌더링 최적화 (이 부분이 핵심입니다)
+# ==========================
 paginate: 10
 baseurl: ""
 
+# 코드 블록 터미널 디자인 및 스크롤바 활성화를 위한 설정
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true  # 줄 번호를 켜면 터미널 창 모양이 더 정갈해집니다.
+      start_line: 1
+
+sass:
+  style: compressed
+
+# ==========================
+#  탭 및 카테고리 설정
+# ==========================
 collections:
   tabs:
     output: true
@@ -40,6 +63,8 @@ defaults:
     values:
       layout: post
       permalink: /posts/:title/
+      toc: true       # 포스트 우측에 목차(TOC) 자동 생성
+      comments: true  # 댓글 창 활성화
   - scope:
       path: ""
       type: tabs
@@ -64,3 +89,5 @@ exclude:
   - README.md
   - LICENSE
   - "package*.json"
+  - node_modules
+  - vendor
