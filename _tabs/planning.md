@@ -4,7 +4,7 @@ title: Planning
 icon: fas fa-route
 order: 5
 ---
-> **Planning 알고리즘을 공부한 내용을 기록한 포스팅 모음**
+> **Planning 알고리즘 공부 포스팅**
 ---
 
 {% assign posts = site.categories.Planning %}
