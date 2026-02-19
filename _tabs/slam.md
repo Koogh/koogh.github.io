@@ -4,7 +4,7 @@ title: SLAM
 icon: fas fa-map-marked-alt
 order: 3
 ---
-> **SLAM 알고리즘 공부 포스팅*
+> **SLAM 알고리즘 공부 포스팅**
 ---
 {% assign posts = site.categories.SLAM %}
 {% for post in posts %}
