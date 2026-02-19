@@ -4,8 +4,7 @@ title: Setting
 icon: fas fa-gear
 order: 2
 ---
-> **알고리즘 동작을 위한 환경설정과 관련된 포스팅 모음**
-
+> **환경설정과 관련 포스팅**
 ---
 
 {% assign posts = site.categories.Setting %}
