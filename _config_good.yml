@@ -1,0 +1,66 @@
+# The Site Configuration
+theme: jekyll-theme-chirpy
+lang: en
+timezone: Asia/Seoul
+
+# SEO 설정
+title: Koogh's Blog
+tagline: Robotics & SLAM
+description: "PhD in Electronics, Samsung Research"
+
+# [수정 1] 사이트 주소 (CSS/JS 로드에 필수)
+url: "https://koogh.github.io"
+
+# [수정 2] GitHub 아이디
+github:
+  username: Koogh
+
+twitter:
+  username: 
+
+social:
+  name: Koogh
+  email: gunhee.koo@gmail.com
+  links:
+    - https://github.com/Koogh
+
+# [수정 3] 아래 설정은 원본 그대로 유지 (특수문자만 제거)
+paginate: 10
+baseurl: ""
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /posts/:title/
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - "package*.json"
