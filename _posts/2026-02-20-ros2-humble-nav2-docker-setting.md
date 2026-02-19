@@ -1,6 +1,5 @@
 ---
 title: "ROS2_Humble_Nav2_Docker_Setting" 
-date: 2026-02-19 23:55:00 +0900 
 categories: [Setting] 
 math: true
 ---
