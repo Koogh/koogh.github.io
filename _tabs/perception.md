@@ -4,7 +4,8 @@ title: Perception
 icon: fas fa-eye
 order: 4
 ---
-
+> **Perception 알고리즘을 공부한 내용을 기록한 포스팅 모음**
+---
 {% assign posts = site.categories.Perception %}
 {% for post in posts %}
   <article class="card-wrapper card mb-3">
